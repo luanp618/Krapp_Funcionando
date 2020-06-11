@@ -4,13 +4,16 @@ import 'package:krapp_1/app/core/intercionalization/app_translate.dart';
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-     /* backgroundColor: Colors.white,
-      body: Center(child: Text(Apptranslate(context).text('welcome')),),*/
-       body: SingleChildScrollView(
+    /*return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(child: Text(Apptranslate(context).text('one')),)
+    );*/
+
+        return Scaffold(
+      body: SingleChildScrollView(
           child: Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
+              height: 731,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
@@ -18,37 +21,46 @@ class SplashPage extends StatelessWidget {
                       colors: [Color(0xffc678f9), Color(0xff1969e0)])),
               child: Stack(children: [
                 PositionedDirectional(
-                  top: 442,
-                  start: 53,
+                  top: 592,
+                  start: 61,
                   child: SizedBox(
-                      width: 257,
-                      height: 58,
+                      width: 287,
+                      height: 68,
                       child: // button
                           SizedBox(
                               width: 287,
                               height: 68,
                               child: Stack(children: [
                                 // ColorBackground
+                                PositionedDirectional(
+                                  top: 0,
+                                  start: 0,
+                                  child: Container(
+                                      width: 287,
+                                      height: 68,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(10)),
+                                          color: const Color(0xffffffff))),
+                                ),
                                 // Title
                                 PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute());
-                                      },
-                                    ),
-                                  ),
+                                  top: 20,
+                                  start: 102,
+
+                    child: RaisedButton(
+                      child: Text('INICIAR!'),
+                      onPressed: () {
+                        Navigator.of(context).push(_createRoute());
+                      },
+                    ),
                                 )
                               ]))),
                 ),
                 // Text
                 PositionedDirectional(
-                  top: 150,
-                  start: 90,
+                  top: 216,
+                  start: 100,
                   child: SizedBox(
                       width: 200,
                       height: 70,
@@ -56,8 +68,7 @@ class SplashPage extends StatelessWidget {
                           SizedBox(
                               child: // Antes de iniciarmos escolha um idioma.
                                   SizedBox(
-                                      child: Text(
-                        "Antes de iniciarmos escolha um idioma.",
+                                      child: Text((Apptranslate(context).text('one')),
                         style: const TextStyle(
                             color: const Color(0xffffffff),
                             fontWeight: FontWeight.w500,
@@ -69,11 +80,11 @@ class SplashPage extends StatelessWidget {
                 ),
                 // Rectangle 1
                 PositionedDirectional(
-                  top: 246,
-                  start: 95,
+                  top: 326,
+                  start: 105,
                   child: Container(
-                      width: MediaQuery.of(context).size.width * 0.50,
-                      height: MediaQuery.of(context).size.height * 0.08,
+                      width: 199,
+                      height: 51,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(4)),
                           border: Border.all(
@@ -81,8 +92,8 @@ class SplashPage extends StatelessWidget {
                 ),
                 // Português
                 PositionedDirectional(
-                  top: 260,
-                  start: 150,
+                  top: 340,
+                  start: 163,
                   child: SizedBox(
                       width: 85,
                       height: 24,
@@ -96,11 +107,11 @@ class SplashPage extends StatelessWidget {
                 ),
                 // Rectangle 2
                 PositionedDirectional(
-                  top: 332,
-                  start: 95,
+                  top: 402,
+                  start: 105,
                   child: Container(
-                      width: MediaQuery.of(context).size.width * 0.50,
-                      height: MediaQuery.of(context).size.height * 0.08,
+                      width: 199,
+                      height: 51,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(4)),
                           border: Border.all(
@@ -108,12 +119,12 @@ class SplashPage extends StatelessWidget {
                 ),
                 // Krahô
                 PositionedDirectional(
-                  top: 346,
-                  start: 165,
+                  top: 416,
+                  start: 180,
                   child: SizedBox(
                       width: 58,
-                      height: 20,
-                      child: Text("Ingles",
+                      height: 24,
+                      child: Text("Krahô",
                           style: const TextStyle(
                               color: const Color(0xffffffff),
                               fontWeight: FontWeight.w500,
@@ -123,6 +134,7 @@ class SplashPage extends StatelessWidget {
                 )
               ]))),
     );
+
   }
 }
 
@@ -146,12 +158,11 @@ Route _createRoute() {
 
 class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+            return Scaffold(
       body: SingleChildScrollView(
           child: Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
+              height: 731,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
@@ -159,11 +170,11 @@ class Page2 extends StatelessWidget {
                       colors: [Color(0xffc678f9), Color(0xff1969e0)])),
               child: Stack(children: [
                 PositionedDirectional(
-                  top: 442,
-                  start: 53,
+                  top: 592,
+                  start: 61,
                   child: SizedBox(
-                      width: 257,
-                      height: 58,
+                      width: 287,
+                      height: 68,
                       child: // button
                           SizedBox(
                               width: 287,
@@ -171,33 +182,42 @@ class Page2 extends StatelessWidget {
                               child: Stack(children: [
                                 // ColorBackground
                                 PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute2());
-                                      },
-                                    ),
-                                  ),
+                                  top: 0,
+                                  start: 0,
+                                  child: Container(
+                                      width: 287,
+                                      height: 68,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(10)),
+                                          color: const Color(0xffffffff))),
+                                ),
+                                // Title
+                                PositionedDirectional(
+                                  top: 20,
+                                  start: 102,
+
+                    child: RaisedButton(
+                      child: Text('INICIAR!'),
+                      onPressed: () {
+                        Navigator.of(context).push(_createRoute2());
+                      },
+                    ),
                                 )
                               ]))),
                 ),
                 // Text
                 PositionedDirectional(
-                  top: 350,
-                  start: 90,
+                  top: 216,
+                  start: 100,
                   child: SizedBox(
                       width: 200,
-                      height: 130,
+                      height: 70,
                       child: // Presentation
                           SizedBox(
                               child: // Antes de iniciarmos escolha um idioma.
                                   SizedBox(
-                                      child: Text(
-                       Apptranslate(context).text('one'),
+                                      child: Text((Apptranslate(context).text('two')),
                         style: const TextStyle(
                             color: const Color(0xffffffff),
                             fontWeight: FontWeight.w500,
@@ -208,8 +228,59 @@ class Page2 extends StatelessWidget {
                       )))),
                 ),
                 // Rectangle 1
+                PositionedDirectional(
+                  top: 326,
+                  start: 105,
+                  child: Container(
+                      width: 199,
+                      height: 51,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(4)),
+                          border: Border.all(
+                              color: const Color(0xffffffff), width: 1))),
+                ),
+                // Português
+                PositionedDirectional(
+                  top: 340,
+                  start: 163,
+                  child: SizedBox(
+                      width: 85,
+                      height: 24,
+                      child: Text("Português",
+                          style: const TextStyle(
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Poppins",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 16.0))),
+                ),
                 // Rectangle 2
+                PositionedDirectional(
+                  top: 402,
+                  start: 105,
+                  child: Container(
+                      width: 199,
+                      height: 51,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(4)),
+                          border: Border.all(
+                              color: const Color(0xffffffff), width: 1))),
+                ),
                 // Krahô
+                PositionedDirectional(
+                  top: 416,
+                  start: 180,
+                  child: SizedBox(
+                      width: 58,
+                      height: 24,
+                      child: Text("Krahô",
+                          style: const TextStyle(
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Poppins",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 16.0))),
+                )
               ]))),
     );
   }
@@ -235,12 +306,11 @@ Route _createRoute2() {
 
 class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
+            return Scaffold(
+      body: SingleChildScrollView(
           child: Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
+              height: 731,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
@@ -248,11 +318,11 @@ body: SingleChildScrollView(
                       colors: [Color(0xffc678f9), Color(0xff1969e0)])),
               child: Stack(children: [
                 PositionedDirectional(
-                  top: 442,
-                  start: 53,
+                  top: 592,
+                  start: 61,
                   child: SizedBox(
-                      width: 257,
-                      height: 58,
+                      width: 287,
+                      height: 68,
                       child: // button
                           SizedBox(
                               width: 287,
@@ -260,34 +330,42 @@ body: SingleChildScrollView(
                               child: Stack(children: [
                                 // ColorBackground
                                 PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute3());
-                                      },
-                                    ),
-                                  ),
+                                  top: 0,
+                                  start: 0,
+                                  child: Container(
+                                      width: 287,
+                                      height: 68,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(10)),
+                                          color: const Color(0xffffffff))),
+                                ),
+                                // Title
+                                PositionedDirectional(
+                                  top: 20,
+                                  start: 102,
+
+                    child: RaisedButton(
+                      child: Text('INICIAR!'),
+                      onPressed: () {
+                        Navigator.of(context).push(_createRoute4());
+                      },
+                    ),
                                 )
                               ]))),
                 ),
                 // Text
                 PositionedDirectional(
-                  top: 320,
-                  start: 90,
+                  top: 216,
+                  start: 100,
                   child: SizedBox(
                       width: 200,
-                      height: 130,
+                      height: 70,
                       child: // Presentation
                           SizedBox(
                               child: // Antes de iniciarmos escolha um idioma.
                                   SizedBox(
-                                      child: Text(
-                        
-                       Apptranslate(context).text('"two"'),
+                                      child: Text((Apptranslate(context).text('three')),
                         style: const TextStyle(
                             color: const Color(0xffffffff),
                             fontWeight: FontWeight.w500,
@@ -298,98 +376,59 @@ body: SingleChildScrollView(
                       )))),
                 ),
                 // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute3() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page4(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page4 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
                 PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute4());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
+                  top: 326,
+                  start: 105,
+                  child: Container(
+                      width: 199,
+                      height: 51,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(4)),
+                          border: Border.all(
+                              color: const Color(0xffffffff), width: 1))),
                 ),
-                // Text
+                // Português
                 PositionedDirectional(
-                  top: 300,
-                  start: 90,
+                  top: 340,
+                  start: 163,
                   child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                        Apptranslate(context).text('"three"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
+                      width: 85,
+                      height: 24,
+                      child: Text("Português",
+                          style: const TextStyle(
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Poppins",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 16.0))),
                 ),
-                // Rectangle 1
                 // Rectangle 2
+                PositionedDirectional(
+                  top: 402,
+                  start: 105,
+                  child: Container(
+                      width: 199,
+                      height: 51,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(4)),
+                          border: Border.all(
+                              color: const Color(0xffffffff), width: 1))),
+                ),
                 // Krahô
+                PositionedDirectional(
+                  top: 416,
+                  start: 180,
+                  child: SizedBox(
+                      width: 58,
+                      height: 24,
+                      child: Text("Krahô",
+                          style: const TextStyle(
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Poppins",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 16.0))),
+                )
               ]))),
     );
   }
@@ -397,7 +436,7 @@ body: SingleChildScrollView(
 
 Route _createRoute4() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page5(),
+    pageBuilder: (context, animation, secondaryAnimation) => Page2(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       var begin = Offset(0.0, 1.0);
       var end = Offset.zero;
@@ -411,794 +450,5 @@ Route _createRoute4() {
       );
     },
   );
-}
-
-class Page5 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute5());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 330,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        Apptranslate(context).text('"four"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute5() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page6(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page6 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute6());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 300,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                        Apptranslate(context).text('"five"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute6() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page7(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page7 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute7());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 330,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                        Apptranslate(context).text('"six"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute7() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page8(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page8 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute8());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 330,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        Apptranslate(context).text('"seven"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute8() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page9(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page9 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute9());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 330,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                        Apptranslate(context).text('"eight"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute9() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page10(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page10 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute10());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 330,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                       Apptranslate(context).text('"nine"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute10() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page11(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page11 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute11());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 300,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        Apptranslate(context).text('"ten"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute11() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page12(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page12 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute12());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 300,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                       Apptranslate(context).text('"eleven"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
-}
-
-Route _createRoute12() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page13(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page13 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-body: SingleChildScrollView(
-          child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height * 1.01,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0xffc678f9), Color(0xff1969e0)])),
-              child: Stack(children: [
-                PositionedDirectional(
-                  top: 442,
-                  start: 53,
-                  child: SizedBox(
-                      width: 257,
-                      height: 58,
-                      child: // button
-                          SizedBox(
-                              width: 287,
-                              height: 68,
-                              child: Stack(children: [
-                                // ColorBackground
-                                PositionedDirectional(
-                                  child: Center(
-                                    child: RaisedButton(
-                                      child: Text(
-                                        ('Continuar'),
-                                      ),
-                                      onPressed: () {
-                                        Navigator.of(context)
-                                            .push(_createRoute());
-                                      },
-                                    ),
-                                  ),
-                                )
-                              ]))),
-                ),
-                // Text
-                PositionedDirectional(
-                  top: 300,
-                  start: 90,
-                  child: SizedBox(
-                      width: 200,
-                      height: 130,
-                      child: // Presentation
-                          SizedBox(
-                              child: // Antes de iniciarmos escolha um idioma.
-                                  SizedBox(
-                                      child: Text(
-                        
-                        Apptranslate(context).text('"twelve"'),
-                        style: const TextStyle(
-                            color: const Color(0xffffffff),
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Poppins",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      )))),
-                ),
-                // Rectangle 1
-                // Rectangle 2
-                // Krahô
-              ]))),
-    );
-  }
 }
 
